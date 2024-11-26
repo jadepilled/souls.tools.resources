@@ -1,4 +1,11 @@
 <style>
+
+@font-face {
+  font-family: 'Spectral';
+  src: url('./Spectral-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
     /* Base styles for the dark mode */
     body {
       font-family: Spectral, Arial, sans-serif;
