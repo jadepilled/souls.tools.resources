@@ -1,0 +1,92 @@
+<style>
+    /* Base styles for the dark mode */
+    body {
+      font-family: Arial, sans-serif;
+      background: transparent; /* For embedding as an iframe */
+      color: #e0e0e0;
+      margin: 0;
+      padding: 10px;
+    }
+
+    /* Header (Achievement Title) */
+    h2 {
+      font-size: 1.2rem;
+      color: #f1f1f1;
+      text-align: center;
+      margin-bottom: 15px;
+      padding: 10px;
+      background-color: #292929;
+      border-radius: 10px;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    /* List Container */
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      max-height: 400px; /* Limit height with scrolling */
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: #90caf9 #1e1e1e; /* Light blue thumb, dark track */
+    }
+
+    ul::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ul::-webkit-scrollbar-thumb {
+      background-color: #90caf9; /* Light blue thumb */
+      border-radius: 10px;
+    }
+
+    ul::-webkit-scrollbar-track {
+      background-color: #1e1e1e;
+    }
+
+    /* List Items */
+    li {
+      background-color: #292929;
+      margin-bottom: 10px;
+      padding: 10px 15px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center; /* Center align checkbox and text */
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+      transition: background-color 0.3s ease;
+    }
+
+    li:hover {
+      background-color: #333333; /* Slightly lighter hover effect */
+    }
+
+    /* Checkbox and Label */
+    label {
+      cursor: pointer;
+      flex-grow: 1;
+      font-size: 0.9rem;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      border: 2px solid #90caf9; /* Light blue border */
+      background-color: #121212;
+      cursor: pointer;
+      appearance: none; /* Remove default styles */
+      outline: none;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    input[type="checkbox"]:checked {
+      background-color: #90caf9; /* Light blue highlight */
+      border-color: #90caf9;
+    }
+
+    input[type="checkbox"]:focus {
+      border-color: #bbdefb; /* Brighter blue on focus */
+    }
+  </style>

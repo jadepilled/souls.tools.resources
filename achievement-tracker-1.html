@@ -1,55 +1,62 @@
-<script src="achievement-trackers.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Achievement Tracker</title>
+<link rel="stylesheet" href="achievement-trackers.css">
+</head>
 <body>
- <h2 id="knights_honor-progress">Knights Honor Achievement (Obtain 49 rare weapons) [0/49]</h2>
+<h2 id="knights_honor-progress">Knights Honor Achievement (Obtain 49 rare weapons) [0/49]</h2>
 <ul>
-<li data-id="checklist_1_1"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_1" type="checkbox" class="knights_honor-checkbox">Astora's Straight Sword - Beside the Undead Dragon in the Valley of Drakes</label></li>
-<li data-id="checklist_1_2"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_2" type="checkbox" class="knights_honor-checkbox">Black Iron Greatshield - Near the painting in Anor Londo that leads to Painted World of Ariamis</label></li>
-<li data-id="checklist_1_3"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_3" type="checkbox" class="knights_honor-checkbox">Black Knight Greataxe - Dropped by greataxe wielding Black Knights</label></li>
-<li data-id="checklist_1_4"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_4" type="checkbox" class="knights_honor-checkbox">Black Knight Greatsword - Dropped by greatsword wielding Black Knights</label></li>
-<li data-id="checklist_1_5"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_5" type="checkbox" class="knights_honor-checkbox">Black Knight Halberd - Dropped by halberd wielding Black Knights</label></li>
-<li data-id="checklist_1_6"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_6" type="checkbox" class="knights_honor-checkbox">Black Knight Shield - Dropped by Black Knights</label></li>
-<li data-id="checklist_1_7"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_7" type="checkbox" class="knights_honor-checkbox">Black Knight Sword - Dropped by sword wielding Black Knights</label></li>
-<li data-id="checklist_1_8"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_8" type="checkbox" class="knights_honor-checkbox">Bloodshield - Found in Painted World of Ariamis guarded by the Undead Dragon</label></li>
-<li data-id="checklist_1_9"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_9" type="checkbox" class="knights_honor-checkbox">Channeler's Trident - Dropped by Channelers</label></li>
-<li data-id="checklist_1_10"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_10" type="checkbox" class="knights_honor-checkbox">Chaos Blade - Soul of Quelaag and +10 Katana at the Giant Blacksmith</label></li>
-<li data-id="checklist_1_11"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_11" type="checkbox" class="knights_honor-checkbox">Crescent Axe - Dropped or sold by Patches the Hyena for 10,000 souls</label></li>
-<li data-id="checklist_1_12"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_12" type="checkbox" class="knights_honor-checkbox">Crest Shield - Dropped by the hollow Elite Knight when you revisit Undead Asylum</label></li>
-<li data-id="checklist_1_13"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_13" type="checkbox" class="knights_honor-checkbox">Crystal Ring Shield - Soul of the Moonlight Butterfly and +10 Shield at the Giant Blacksmith</label></li>
-<li data-id="checklist_1_14"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_14" type="checkbox" class="knights_honor-checkbox">Greatsword of Artorias (Cursed) - Soul of (Great Wolf) Sif and +10 Straight Sword at the Giant Blacksmith</label></li>
-<li data-id="checklist_1_15"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_15" type="checkbox" class="knights_honor-checkbox">Dark Hand - Reward for joining the Darkwraith covenant and dropped by Darkwraith Knights</label></li>
-<li data-id="checklist_1_16"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_16" type="checkbox" class="knights_honor-checkbox">Darkmoon Bow - Soul of Gwyndolin and +10 Bow at the Giant Blacksmith</label></li>
-<li data-id="checklist_1_17"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_17" type="checkbox" class="knights_honor-checkbox">Demon's Spear - Sold by Shiva of the East fo 15,000 souls and dropped by Bat Wing Demons</label></li>
-<li data-id="checklist_1_18"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_18" type="checkbox" class="knights_honor-checkbox">Dragon Bone Fist - Core of an Iron Golem and +10 Fist weapon at the Giant Blacksmith</label></li>
-<li data-id="checklist_1_19"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_19" type="checkbox" class="knights_honor-checkbox">Dragon Crest Shield - Beside the Undead Dragon in the Valley of Drakes</label></li>
-<li data-id="checklist_1_20"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_20" type="checkbox" class="knights_honor-checkbox">Dragon Greatsword - Cut off the tail of the dragon at the Path of the Dragon covenant</label></li>
-<li data-id="checklist_1_21"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_21" type="checkbox" class="knights_honor-checkbox">Dragon Tooth - In one of the chests in the hidden room in Anor Londo where you get Havel's Set</label></li>
-<li data-id="checklist_1_22"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_22" type="checkbox" class="knights_honor-checkbox">Dragon King Greataxe - Cut off the tail of the Gaping Dragon</label></li>
-<li data-id="checklist_1_23"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_23" type="checkbox" class="knights_honor-checkbox">Dragonslayer Greatbow - Found by dropping out the broken window in Anor Londo</label></li>
-<li data-id="checklist_1_24"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_24" type="checkbox" class="knights_honor-checkbox">Dragonslayer Spear - Soul of Ornstein and +10 Spear at the Giant Blacksmith</label></li>
-<li data-id="checklist_1_25"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_25" type="checkbox" class="knights_honor-checkbox">Drake Sword - Cut off the tail of the Hellkite Wyvern</label></li>
-<li data-id="checklist_1_26"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_26" type="checkbox" class="knights_honor-checkbox">Effigy Shield - Found in the Tomb of the Giants near the second bonfire</label></li>
-<li data-id="checklist_1_27"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_27" type="checkbox" class="knights_honor-checkbox">Gargoyle Tail Axe - Cut off the tail of a Bell Gargoyle in Undead Parish or Anor Londo</label></li>
-<li data-id="checklist_1_28"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_28" type="checkbox" class="knights_honor-checkbox">Giant's Halberd - Sold by the Giant Blacksmith for 5,000 souls or dropped by Royal Sentinels im Anor Londo</label></li>
-<li data-id="checklist_1_29"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_29" type="checkbox" class="knights_honor-checkbox">Golem Axe - Core of an Iron Golem and +10 Axe at the Giant Blacksmith</label></li>
-<li data-id="checklist_1_30"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_30" type="checkbox" class="knights_honor-checkbox">Grant - Dropped by Paladin Leeroy when he invades in the Tomb of the Giants</label></li>
-<li data-id="checklist_1_31"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_31" type="checkbox" class="knights_honor-checkbox">Gravelord Sword - Reward for joining the Gravelord Servant covenant</label></li>
-<li data-id="checklist_1_32"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_32" type="checkbox" class="knights_honor-checkbox">Great Lord Greatsword - Soul of Gwyn and +10 Straight Sword at the Giant Blacksmith</label></li>
-<li data-id="checklist_1_33"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_33" type="checkbox" class="knights_honor-checkbox">Greatshield of Artorias - Soul of (Great Wolf) Sif and +10 Shield at the Giant Blacksmith</label></li>
-<li data-id="checklist_1_34"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_34" type="checkbox" class="knights_honor-checkbox">Greatsword of Artorias - Soul of (Great Wolf) Sif and +10 Broken Straight Sword or +10 Straight Sword Hilt at the Giant Blacksmith</label></li>
-<li data-id="checklist_1_35"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_35" type="checkbox" class="knights_honor-checkbox">Havel's Greatshield - In one of the chests in the hidden room in Anor Londo where you get Havel's Set</label></li>
-<li data-id="checklist_1_36"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_36" type="checkbox" class="knights_honor-checkbox">Lifehunt Scythe - Soul of Priscilla and +10 Scythe, Whip or Halberd at the Giant Blacksmith</label></li>
-<li data-id="checklist_1_37"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_37" type="checkbox" class="knights_honor-checkbox">Moonlight Butterfly Horn - Soul of the Moonlight Butterfly and +10 Spear or Rapier at the Giant Blacksmith</label></li>
-<li data-id="checklist_1_38"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_38" type="checkbox" class="knights_honor-checkbox">Moonlight Greatsword - Cut off the tail of Seath the Scaleless</label></li>
-<li data-id="checklist_1_39"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_39" type="checkbox" class="knights_honor-checkbox">Priscilla's Dagger - Cut off the tail of Crossbreed Priscilla</label></li>
-<li data-id="checklist_1_40"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_40" type="checkbox" class="knights_honor-checkbox">Quelaag's Furysword - Soul of Quelaag and +10 Curved Sword or Curved Greatsword at the Giant Blacksmith</label></li>
-<li data-id="checklist_1_41"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_41" type="checkbox" class="knights_honor-checkbox">Sanctus - Dropped by Paladin Leeroy when he invades in the Tomb of the Giants</label></li>
-<li data-id="checklist_1_42"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_42" type="checkbox" class="knights_honor-checkbox">Silver Knight Shield - Dropped by Silver Knights in Anor Londo</label></li>
-<li data-id="checklist_1_43"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_43" type="checkbox" class="knights_honor-checkbox">Silver Knight Spear - Dropped by spear wielding Silver Knights in Anor Londo</label></li>
-<li data-id="checklist_1_44"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_44" type="checkbox" class="knights_honor-checkbox">Silver Knight Straight Sword - Dropped by sword wielding Silver Knights in Anor Londo</label></li>
-<li data-id="checklist_1_45"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_45" type="checkbox" class="knights_honor-checkbox">Smough's Hammer - Soul of Smough and +10 Strike weapon at the Giant Blacksmith</label></li>
-<li data-id="checklist_1_46"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_46" type="checkbox" class="knights_honor-checkbox">Stone Greatshield - Dropped by Great Stone Knights in Darkroot Garden</label></li>
-<li data-id="checklist_1_47"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_47" type="checkbox" class="knights_honor-checkbox">Stone Greatsword - Dropped by Great Stone Knights in Darkroot Garden</label></li>
-<li data-id="checklist_1_48"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_48" type="checkbox" class="knights_honor-checkbox">Tin Darkmoon Catalyst - Soul of Gwyndolin and Catalyst at the Giant Blacksmith</label></li>
-<li data-id="checklist_1_49"><label class="checkbox" class="knights_honor-checkbox"><input id="checklist_1_49" type="checkbox" class="knights_honor-checkbox">Velka's Rapier - Behind the breakable wooden fence in the Painted World of Ariamis</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Astora's Straight Sword - Beside the Undead Dragon in the Valley of Drakes</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Black Iron Greatshield - Near the painting in Anor Londo that leads to Painted World of Ariamis</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Black Knight Greataxe - Dropped by greataxe wielding Black Knights</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Black Knight Greatsword - Dropped by greatsword wielding Black Knights</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Black Knight Halberd - Dropped by halberd wielding Black Knights</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Black Knight Shield - Dropped by Black Knights</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Black Knight Sword - Dropped by sword wielding Black Knights</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Bloodshield - Found in Painted World of Ariamis guarded by the Undead Dragon</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Channeler's Trident - Dropped by Channelers</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Chaos Blade - Soul of Quelaag and +10 Katana at the Giant Blacksmith</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Crescent Axe - Dropped or sold by Patches the Hyena for 10,000 souls</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Crest Shield - Dropped by the hollow Elite Knight when you revisit Undead Asylum</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Crystal Ring Shield - Soul of the Moonlight Butterfly and +10 Shield at the Giant Blacksmith</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Greatsword of Artorias (Cursed) - Soul of (Great Wolf) Sif and +10 Straight Sword at the Giant Blacksmith</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Dark Hand - Reward for joining the Darkwraith covenant and dropped by Darkwraith Knights</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Darkmoon Bow - Soul of Gwyndolin and +10 Bow at the Giant Blacksmith</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Demon's Spear - Sold by Shiva of the East fo 15,000 souls and dropped by Bat Wing Demons</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Dragon Bone Fist - Core of an Iron Golem and +10 Fist weapon at the Giant Blacksmith</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Dragon Crest Shield - Beside the Undead Dragon in the Valley of Drakes</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Dragon Greatsword - Cut off the tail of the dragon at the Path of the Dragon covenant</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Dragon Tooth - In one of the chests in the hidden room in Anor Londo where you get Havel's Set</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Dragon King Greataxe - Cut off the tail of the Gaping Dragon</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Dragonslayer Greatbow - Found by dropping out the broken window in Anor Londo</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Dragonslayer Spear - Soul of Ornstein and +10 Spear at the Giant Blacksmith</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Drake Sword - Cut off the tail of the Hellkite Wyvern</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Effigy Shield - Found in the Tomb of the Giants near the second bonfire</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Gargoyle Tail Axe - Cut off the tail of a Bell Gargoyle in Undead Parish or Anor Londo</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Giant's Halberd - Sold by the Giant Blacksmith for 5,000 souls or dropped by Royal Sentinels im Anor Londo</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Golem Axe - Core of an Iron Golem and +10 Axe at the Giant Blacksmith</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Grant - Dropped by Paladin Leeroy when he invades in the Tomb of the Giants</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Gravelord Sword - Reward for joining the Gravelord Servant covenant</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Great Lord Greatsword - Soul of Gwyn and +10 Straight Sword at the Giant Blacksmith</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Greatshield of Artorias - Soul of (Great Wolf) Sif and +10 Shield at the Giant Blacksmith</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Greatsword of Artorias - Soul of (Great Wolf) Sif and +10 Broken Straight Sword or +10 Straight Sword Hilt at the Giant Blacksmith</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Havel's Greatshield - In one of the chests in the hidden room in Anor Londo where you get Havel's Set</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Lifehunt Scythe - Soul of Priscilla and +10 Scythe, Whip or Halberd at the Giant Blacksmith</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Moonlight Butterfly Horn - Soul of the Moonlight Butterfly and +10 Spear or Rapier at the Giant Blacksmith</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Moonlight Greatsword - Cut off the tail of Seath the Scaleless</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Priscilla's Dagger - Cut off the tail of Crossbreed Priscilla</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Quelaag's Furysword - Soul of Quelaag and +10 Curved Sword or Curved Greatsword at the Giant Blacksmith</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Sanctus - Dropped by Paladin Leeroy when he invades in the Tomb of the Giants</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Silver Knight Shield - Dropped by Silver Knights in Anor Londo</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Silver Knight Spear - Dropped by spear wielding Silver Knights in Anor Londo</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Silver Knight Straight Sword - Dropped by sword wielding Silver Knights in Anor Londo</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Smough's Hammer - Soul of Smough and +10 Strike weapon at the Giant Blacksmith</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Stone Greatshield - Dropped by Great Stone Knights in Darkroot Garden</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Stone Greatsword - Dropped by Great Stone Knights in Darkroot Garden</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Tin Darkmoon Catalyst - Soul of Gwyndolin and Catalyst at the Giant Blacksmith</label></li>
+<li><label><input type="checkbox" class="knights_honor-checkbox">Velka's Rapier - Behind the breakable wooden fence in the Painted World of Ariamis</label></li>
 </ul>
+
+  <script src="achievement-trackers.js"></script>
 </body>
