@@ -1,34 +1,39 @@
 document.addEventListener('DOMContentLoaded', function () {
   const achievements = [
-  {
-    progressSelector: '.bond_pyromancer-progress',
-    checkboxClass: 'bond_pyromancer-checkbox',
-    totalItems: 19
-  },
-  {
-    progressSelector: '.knights_honor-progress',
-    checkboxClass: 'knights_honor-checkbox',
-    totalItems: 49
-  },
-  {
-    progressSelector: '.wisdom_sage-progress',
-    checkboxClass: 'wisdom_sage-checkbox',
-    totalItems: 24
-  },
-  {
-    progressSelector: '.prayer_maiden-progress',
-    checkboxClass: 'prayer_maiden-checkbox',
-    totalItems: 23
-  }
-];
-
+    {
+      progressSelector: '#bond-pyromancer-progress',
+      checkboxClass: 'bond_pyromancer-checkbox',
+      totalItems: 19,
+      achievementName: 'Bond of a Pyromancer Achievement (Obtain 19 pyromancies)'
+    },
+    {
+      progressSelector: '#knights-honor-progress',
+      checkboxClass: 'knights_honor-checkbox',
+      totalItems: 49,
+      achievementName: 'Knights Honor Achievement (Obtain 49 rare weapons)'
+    },
+    {
+      progressSelector: '#wisdom-sage-progress',
+      checkboxClass: 'wisdom_sage-checkbox',
+      totalItems: 24,
+      achievementName: 'Wisdom of a Sage Achievement (Obtain 24 sorceries)'
+    },
+    {
+      progressSelector: '#prayer-maiden-progress',
+      checkboxClass: 'prayer_maiden-checkbox',
+      totalItems: 23,
+      achievementName: 'Prayer of a Maiden Achievement (Obtain 23 miracles)'
+    }
+  ];
 
   // Function to update progress text
   function updateProgress(achievement) {
     const checkboxes = document.querySelectorAll(`.${achievement.checkboxClass}`);
     const checkedCount = Array.from(checkboxes).filter(checkbox => checkbox.checked).length;
     const progressElement = document.querySelector(achievement.progressSelector);
-    progressElement.textContent = `[${checkedCount}/${achievement.totalItems}]`;
+
+    // Update the text content of the header
+    progressElement.textContent = `${achievement.achievementName} [${checkedCount}/${achievement.totalItems}]`;
   }
 
   // Initialize achievements
