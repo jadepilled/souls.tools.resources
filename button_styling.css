@@ -1,0 +1,95 @@
+<style>
+.home-button {
+    display: inline-flex;
+    align-items: left;
+    justify-content: left;
+    margin-right: 8px; /* Space between the home button and the logo */
+    text-decoration: none;
+    color: #fff; /* Adjust as needed */
+}
+.home-icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-flex; /* Ensure the button aligns properly with other elements */
+    align-items: center;
+    margin-right: 10px; /* Space between dropdown and adjacent elements */
+}
+
+/* Dropdown Button Styling */
+.mobile-dropdown-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Adjust text size for consistency */
+    color: #fff; /* Matches other navigation elements */
+    gap: 5px; /* Space between text and icon */
+    padding: 8px 12px; /* Adjust padding for better clickable area */
+}
+
+/* Dropdown Icon Styling */
+.dropdown-icon {
+    width: 16px; /* Smaller icon size for a balanced look */
+    height: 16px;
+    fill: currentColor; /* Inherits color from the text */
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    top: 100%;
+    left:0%;
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 10;
+    border-radius: 5px;
+    list-style: none;
+    min-width: 200px; /* Ensures dropdown menu has sufficient width */
+}
+
+.dropdown-content li {
+    padding: 8px 12px;
+}
+
+.dropdown-content li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 14px; /* Adjust font size inside dropdown */
+}
+
+.dropdown-content li a:hover {
+    background-color: #555;
+}
+
+/* Expanded State for Mobile */
+.mobile-dropdown-toggle[aria-expanded="true"] + .dropdown-content {
+    display: block;
+}
+
+/* Desktop Hover Behavior */
+@media (min-width: 768px) {
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
+
+  .fixed-width-container {
+    width: 200px; /* Adjust as necessary to fit both the home button and logo */
+    display: flex;
+    align-items: center; /* Ensure vertical alignment */
+    gap: 8px; /* Spacing between the home button and logo */
+}
+
+</style>

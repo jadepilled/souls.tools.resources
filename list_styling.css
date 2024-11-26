@@ -1,0 +1,84 @@
+<style>
+  /* styling for lists displayed on stats page, possibly others */
+/* Container for each stats section */
+/* Force the stats section to use flex layout */
+.stats-section {
+    display: flex !important;            /* Ensure flexbox is applied */
+    align-items: flex-start !important; /* Align content at the top */
+    gap: 40px !important;               /* Add spacing between heading and list */
+    margin-bottom: 20px !important;     /* Add space below each section */
+}
+
+/* Ensure headings and lists don't stack incorrectly */
+.stats-section h4 {
+    margin: 0 !important;
+    white-space: nowrap !important;     /* Prevent line breaks */
+    font-size: 1.2em !important;
+    text-align: left !important;
+}
+
+/* Force list containers to align properly */
+.stats-list-container {
+    display: flex;                /* Arrange the lists side by side */
+    gap: 40px;                    /* Increase spacing between lists */
+    justify-content: center;      /* Center the lists horizontally */
+    margin-bottom: 20px;          /* Add space below the container */
+    padding: 0 20px;              /* Add padding around the container */
+}
+
+/* Adjust individual list styles */
+.stats-list {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.stats-list ul {
+    list-style-type: none;    /* Remove bullets */
+    padding: 0;               /* Remove padding */
+    margin: 0;                /* Remove margin */
+}
+
+.stats-list ul li {
+    margin-bottom: 5px;       /* Space between list items */
+}
+
+.stats-list ul li a {
+    text-decoration: none;    /* Remove underline from links */
+    color: #007BFF;           /* Default link color */
+}
+
+.stats-list ul li a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #0056b3;             /* Darken color on hover */
+}
+
+@media (max-width: 768px) {
+    .stats-section {
+        flex-direction: column; /* Stack heading and list vertically */
+        align-items: flex-start;
+    }
+}
+/* apply centering to images inside of lists on stat pages  */
+/* Target images within the lists */
+.stats-list-container ul li img {
+    vertical-align: middle; /* Align images as subscript */
+    margin-right: 2px;   /* Optional: Add spacing between the image and text */
+}
+
+
+  @media (max-width: 768px) {
+    .stats-section {
+        flex-direction: column; /* Stack heading and list vertically */
+        align-items: flex-start;
+    }
+}
+  iframe {
+    overflow: visible;
+    background-color: #121212;
+}
+
+iframe-container {
+    overflow: visible;
+}
+
+</style>
