@@ -1,59 +1,58 @@
 document.addEventListener('DOMContentLoaded', function () {
   const achievements = [
-    {
-      id: 'knights-honor-progress',
-      totalItems: 49,
-      localStorageKey: 'knights_honor'
-    },
-    {
-      id: 'wisdom-sage-progress',
-      totalItems: 24,
-      localStorageKey: 'wisdom_sage'
-    },
-    {
-      id: 'bond-pyromancer-progress',
-      totalItems: 19,
-      localStorageKey: 'bond_pyromancer'
-    },
-    {
-      id: 'prayer-maiden-progress',
-      totalItems: 23,
-      localStorageKey: 'prayer_maiden'
-    }
-  ];
+  {
+    progressSelector: '.bond_pyromancer-progress',
+    checkboxClass: 'bond_pyromancer-checkbox',
+    totalItems: 19
+  },
+  {
+    progressSelector: '.knights_honor-progress',
+    checkboxClass: 'knights_honor-checkbox',
+    totalItems: 49
+  },
+  {
+    progressSelector: '.wisdom_sage-progress',
+    checkboxClass: 'wisdom_sage-checkbox',
+    totalItems: 24
+  },
+  {
+    progressSelector: '.prayer_maiden-progress',
+    checkboxClass: 'prayer_maiden-checkbox',
+    totalItems: 23
+  }
+];
 
-  // Helper function to update the progress text
+
+  // Function to update progress text
   function updateProgress(achievement) {
-    const checkboxes = document.querySelectorAll(`.${achievement.localStorageKey}-checkbox`);
+    const checkboxes = document.querySelectorAll(`.${achievement.checkboxClass}`);
     const checkedCount = Array.from(checkboxes).filter(checkbox => checkbox.checked).length;
-    const progressText = document.getElementById(achievement.id);
-    progressText.textContent = `${progressText.dataset.name} [${checkedCount}/${achievement.totalItems}]`;
+    const progressElement = document.querySelector(achievement.progressSelector);
+    progressElement.textContent = `[${checkedCount}/${achievement.totalItems}]`;
   }
 
-  // Initialize each achievement
+  // Initialize achievements
   achievements.forEach(achievement => {
-    const checkboxes = document.querySelectorAll(`.${achievement.localStorageKey}-checkbox`);
-    const progressText = document.getElementById(achievement.id);
-
-    // Ensure each achievement displays its name in the `data-name` attribute
-    progressText.dataset.name = progressText.textContent.split(' [')[0];
+    const checkboxes = document.querySelectorAll(`.${achievement.checkboxClass}`);
 
     checkboxes.forEach((checkbox, index) => {
-      const savedState = localStorage.getItem(`${achievement.localStorageKey}_${index}`);
+      // Load saved state from localStorage
+      const savedState = localStorage.getItem(`${achievement.checkboxClass}_${index}`);
       if (savedState === 'checked') {
         checkbox.checked = true;
       }
 
+      // Add event listener to save state and update progress
       checkbox.addEventListener('change', function () {
         localStorage.setItem(
-          `${achievement.localStorageKey}_${index}`,
+          `${achievement.checkboxClass}_${index}`,
           checkbox.checked ? 'checked' : 'unchecked'
         );
         updateProgress(achievement);
       });
     });
 
-    // Update the progress on page load
+    // Update progress on page load
     updateProgress(achievement);
   });
 });
