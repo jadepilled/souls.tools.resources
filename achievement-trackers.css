@@ -36,7 +36,7 @@
       max-height: 400px; /* Limit height with scrolling */
       overflow-y: auto;
       scrollbar-width: thin;
-      scrollbar-color: #90caf9 #1e1e1e; /* Light blue thumb, dark track */
+      scrollbar-color: #90caf9 #222222; /* Light blue thumb, dark track */
     }
 
     ul::-webkit-scrollbar {
