@@ -1,3 +1,66 @@
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const achievements = [
+    {
+      id: 'knights-honor-progress',
+      totalItems: 49,
+      localStorageKey: 'knights_honor'
+    },
+    {
+      id: 'wisdom-sage-progress',
+      totalItems: 24,
+      localStorageKey: 'wisdom_sage'
+    },
+    {
+      id: 'bond-pyromancer-progress',
+      totalItems: 19,
+      localStorageKey: 'bond_pyromancer'
+    },
+    {
+      id: 'prayer-maiden-progress',
+      totalItems: 23,
+      localStorageKey: 'prayer_maiden'
+    }
+  ];
+
+  // Helper function to update the progress text
+  function updateProgress(achievement) {
+    const checkboxes = document.querySelectorAll(`.${achievement.localStorageKey}-checkbox`);
+    const checkedCount = Array.from(checkboxes).filter(checkbox => checkbox.checked).length;
+    const progressText = document.getElementById(achievement.id);
+    progressText.textContent = `${progressText.dataset.name} [${checkedCount}/${achievement.totalItems}]`;
+  }
+
+  // Initialize each achievement
+  achievements.forEach(achievement => {
+    const checkboxes = document.querySelectorAll(`.${achievement.localStorageKey}-checkbox`);
+    const progressText = document.getElementById(achievement.id);
+
+    // Ensure each achievement displays its name in the `data-name` attribute
+    progressText.dataset.name = progressText.textContent.split(' [')[0];
+
+    checkboxes.forEach((checkbox, index) => {
+      const savedState = localStorage.getItem(`${achievement.localStorageKey}_${index}`);
+      if (savedState === 'checked') {
+        checkbox.checked = true;
+      }
+
+      checkbox.addEventListener('change', function () {
+        localStorage.setItem(
+          `${achievement.localStorageKey}_${index}`,
+          checkbox.checked ? 'checked' : 'unchecked'
+        );
+        updateProgress(achievement);
+      });
+    });
+
+    // Update the progress on page load
+    updateProgress(achievement);
+  });
+});
+
+  
+</script>
 <body><h3 id="bkmrk-knights-honor-achiev">Knights Honor Achievement (Obtain 49 rare weapons) <span id="bkmrk-%5B0%2F49%5D" class="in_progress">[0/49]</span></h3>
 <ul id="bkmrk-astora%27s-straight-sw">
 <li data-id="checklist_1_1"><label class="checkbox"><input id="bkmrk-" class="knights_honor-checkbox" type="checkbox">Astora's Straight Sword - Beside the Undead Dragon in the Valley of Drakes</label></li>
