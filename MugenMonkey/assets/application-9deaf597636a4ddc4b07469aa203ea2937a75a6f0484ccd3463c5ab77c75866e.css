@@ -1,3 +1,7 @@
+div.crow:nth-child(4)
+{
+	position:fixed;
+}
 body{
    -webkit-transform:scale(0.8);
    -moz-transform:scale(0.8);
@@ -12,6 +16,10 @@ body{
     weapons.html, body {
     overflow-x: hidden;
      overflow: hidden; /* Disable scrolling on the page */
+	 
+  }
+  div.padding {
+	  position:relative;
   }
 
 div.wepstat:{
