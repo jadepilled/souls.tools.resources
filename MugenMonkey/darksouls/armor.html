@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from mugenmonkey.com/darksouls/armor by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Nov 2024 23:39:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>MugenMonkey</title>
+  <link rel="stylesheet" media="all" href="../assets/application-9deaf597636a4ddc4b07469aa203ea2937a75a6f0484ccd3463c5ab77c75866e.css" />
+  <script>
+//<![CDATA[
+window.gon={};gon.mugenmonkey_remastered={"user_info":{"signed_in":false,"user_name":"Anonymous","current_users_build":false}};
+//]]>
+</script>
+
+  <script>
+//<![CDATA[
+window.gon={};gon.mugenmonkey_remastered={"user_info":{"signed_in":false,"user_name":"Anonymous","current_users_build":false}};
+//]]>
+</script>
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="zyBDISkM+Or9pM4Y8Dzffetk6MNgeN7bYPHHWnkMmxgynSdEqgms8EJ/UKEZdKVR8TmAmjvFiaT0YeoEDdpEGg==" />
+
+  
+  
+  
+  <script async defer data-website-id="36ed74bc-25d1-4854-99db-841b41145245" src="../../nate-umami.herokuapp.com/umami.js"></script>
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://mugenmonkey.com/assets/favicon-a3e07275c8da8f278bb0cb7d9c7fded410ddfca176b715e5033e8ee5d9efab2c.ico" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../assets/apple-touch-icon-152x152.png" />
+  <script src="../assets/sitewide-62d25d80f4be7b27a1a7d24cce4b876b5a63b9d74dc9c69de8d51d035857487f.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Tienne' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <meta name="google-site-verification" content="yC1-0M_A2g4_JABc9EbOvfScLZqUj6sld87RM3y9oWg" />
+
+</head>
+<body>
+
+
+      <div role="main" id="content">
+        <div id="armor-exclist" style="height:740px;max-height:1000px;">
+        <div class="armor_exb">
+          Hide Armor List
+        </div>
+          <div class="padding">
+          <div class="right small"></div>
+          <h2 class="title">Armor List</h2>
+          <hr class="nomargin">
+            <div id="armorlist" class="noSelect" style="height:650px;max-height:800px"></div>
+          <div class="small"><img src="img/accept.html" width="13" height="13" alt="enabled armor" /> = enabled | <img src="img/remove.html" width="13" height="13" alt="disabled armor" /> = disabled | <img src="img/half.html" width="13" height="13" alt="partially enabled armor" /> = set partially enabled </div>
+          </div>
+        </div>
+        <div id="armorfind" class="secdia" style="display:flex;position:relative;top:0;left:0;height:auto;max-height:1000px">
+        <div class="armor_exb">
+          Show Armor List
+        </div>
+          <div class="padding clearfix">
+            <h2 class="title">Armor Optimizer <span class="fright small faded normal">Originally hosted at <a href="https://mugenmonkey.com/darksouls/armor">MugenMonkey</a></span></h2>
+            <hr class="nomargin">
+            <div class="crow arex" style="max-height:auto;height:auto;">
+              <div class="padding">
+
+              <div class="formbox clearfix" uid="en" idm='stats'>
+                <label for="endurance">Endurance</label>
+                <input type="text" maxlength="2" id="bendurance" disabled uid="en" value="8" style="display:none;" />
+                <input type="text" maxlength="2" id="cendurance" tabindex="1" uid="en" class="bgw" value="8" />
+                <span class="arrow down noSelect" id="uendurance" uid="en"></span>
+                <span class="arrow up noSelect" id="dendurance" uid="en"></span>
+              </div>
+              <hr class="nomargin">
+              <div class="small clearfix noSelect">
+                <div class="leftside">
+                  <div class="padw31 small">
+                    <div><label> <input type="checkbox" class="left2 rings2" value="0" name="rofap" id="rofap"> Favor Ring</label></div>
+                    <div><label> <input type="checkbox" class="left2 rings2" value="0" name="havels" id="havels"> Havel's Ring</label></div>
+                  </div>
+                </div>
+                <div class="rightside">
+                  <div class="padw31 small">
+                    <div><label> <input type="checkbox" class="left2 rings2" value="0" name="maskof" id="maskof"> Father Mask</label></div>
+                  </div>
+                </div>
+              </div>
+              <hr class="nomargin">
+              <!--<div class="formbox clearfix">
+                <label for="wepWeight">Weapon Weight</label>
+                <input type="text" maxlength="4" id="wepWeight" tabindex="2" class="bgw minim2" value="0" />
+                <!--<span class="arrow down noSelect" id="uendurance" uid="en"></span>
+                <span class="arrow up noSelect" id="dendurance" uid="en"></span>--
+              </div>-->
+              <div class="">
+                <div class="d ovi"><span class="noSelect bold">LH1</span>
+                  <select id="lh1" class="gear g2">
+
+                  </select>
+                </div>
+                <div class="d ovi"><span class="noSelect bold">RH1</span>
+                  <select id="rh1" class="gear g2">
+
+                  </select>
+                </div>
+                <div class="d ovi"><span class="noSelect bold">LH2</span>
+                  <select id="lh2" class="gear g2">
+
+                  </select>
+                </div>
+                <div class="d ovi"><span class="noSelect bold">RH2</span>
+                  <select id="rh2" class="gear g2">
+
+                  </select>
+                </div>
+              </div>
+              <hr class="nomargin">
+              <h3 class="title center">Your weight breakpoints<div class="small faded normal">(minus weapon weight)</div></h3>
+
+                <div class="formbox2 clearfix">
+                  <label><input type="radio" name="valtu" value="1" class="left2" checked /> Until 25% burden</label> <input type="text" readonly id="armorWeightidLight" class="bsl" />
+                </div>
+                <div class="formbox2 clearfix">
+                  <label><input type="radio" name="valtu" value="2" class="left2" /> Until 50% burden</label> <input type="text" readonly id="armorWeightidMid" class="bsl" />
+                </div>
+                <div class="formbox2 clearfix">
+                  <label><input type="radio" name="valtu" value="3" class="left2" /> Until 100% burden</label> <input type="text" readonly id="armorWeightidFat" class="bsl" />
+                </div>
+                <div class="formbox2 clearfix">
+                  <label> <input type="radio" name="valtu" value="4" class="left2" /> Or use custom</label> <input type="text" maxlength="5" id="armorWeightidCus" class="bsl" />
+                </div>
+                <hr class="">
+              <h3 class="title center">How do you want to sort?<div class="small faded normal">(sorts to max selected value first)</div></h3>
+              <div class="small clearfix">
+                <div class="leftside">
+                  <div class="padw31 small">
+                    <div><label> <input type="radio" name="sortu" value="phys" class="left2" /> by Physical def</label></div>
+                    <div><label> <input type="radio" name="sortu" value="strk" class="left2" /> by Strike def</label></div>
+                    <div><label> <input type="radio" name="sortu" value="slsh" class="left2" /> by Slash def</label></div>
+                    <div><label> <input type="radio" name="sortu" value="thr" class="left2" /> by Thrust def</label></div>
+                    <div><label> <input type="radio" name="sortu" value="mag" class="left2" /> by Magic def</label></div>
+                    <div><label> <input type="radio" name="sortu" value="fire" class="left2" /> by Fire def</label></div>
+                  </div>
+                </div>
+                <div class="rightside">
+                  <div class="padw31 small">
+                    <div><label> <input type="radio" name="sortu" value="lit" class="left2" /> by Lightning def</label></div>
+                    <div><label> <input type="radio" name="sortu" value="ps" class="left2" checked /> by Poise</label></div>
+                    <div><label> <input type="radio" name="sortu" value="psn" class="left2" /> by Poison res</label></div>
+                    <div><label> <input type="radio" name="sortu" value="bld" class="left2" /> by Bleed res</label></div>
+                    <div><label> <input type="radio" name="sortu" value="crs" class="left2" /> by Curse res</label></div>
+                    <div><label id="custom-sort">Min/Max Values</label></div>
+                  </div>
+                </div>
+              </div>
+              <hr class="nomargin">
+              <div class="padding  clearfix" style="padding-bottom:0;">
+                <span class="fbuil">Find Armor</span>  <span class="fcancel">clear results</span>
+              </div>
+              </div>
+            </div>
+            <div class="bwcrow" style="height:672px">
+              <div class="padding">
+                <div class="small clearfix">
+                  <div class="fixleft" style="width:20%">Forced equipment<div id="fixleft"><span class="faded edita">Clear All</span></div></div>
+                  <div class="fixleft left70">Head<div id="forcedHead"><span class="faded edita">(none)</span></div></div>
+                  <div class="fixleft left70">Chest<div id="forcedChes"><span class="faded edita">(none)</span></div></div>
+                  <div class="fixleft left70">Hands<div id="forcedHand"><span class="faded edita">(none)</span></div></div>
+                  <div class="fixleft left70">Legs<div id="forcedLegs"><span class="faded edita">(none)</span></div></div>
+                </div>
+                <hr class="nomargin">
+              </div>
+              <div id="armor-sets" style="height: 561px">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="custom-sort-pop">
+        <div class="modalar3"></div>
+
+          <table id="datA">
+            <tbody><tr><td class="minim faded">stat</td><td class="minim faded">min</td><td class="minim faded">max</td></tr>
+            <tr class="h"><td class="stat">Physical</td>
+              <td><input type="text" value="0" size="3" maxlength="6" name="mphy" id="mphy" class="minim2"></td>
+              <td><input type="text" value="280.7" size="4" maxlength="6" name="mxphy" id="mxphy" class="minim2"></td>
+            </tr>
+
+            <tr class="h"><td class="stat">Strike</td>
+              <td><input type="text" value="0" size="3" maxlength="6" name="mstr" id="mstr" class="minim2"></td>
+              <td><input type="text" value="263.5" size="4" maxlength="6" name="mxstr" id="mxstr" class="minim2"></td>
+            </tr>
+
+            <tr class="h"><td class="stat">Slash</td>
+              <td><input type="text" value="0" size="3" maxlength="6" name="msla" id="msla" class="minim2"></td>
+              <td><input type="text" value="318.1" size="4" maxlength="6" name="mxsla" id="mxsla" class="minim2"></td>
+            </tr>
+
+            <tr class="h"><td class="stat">Thrust</td>
+              <td><input type="text" value="0" size="3" maxlength="6" name="mthr" id="mthr" class="minim2"></td>
+              <td><input type="text" value="280.7" size="4" maxlength="6" name="mxthr" id="mxthr" class="minim2"></td>
+            </tr>
+
+            <tr class="h"><td class="stat">Magic</td>
+              <td><input type="text" value="0" size="3" maxlength="6" name="mmag" id="mmag" class="minim2"></td>
+              <td><input type="text" value="253.0" size="4" maxlength="6" name="mxmag" id="mxmag" class="minim2"></td>
+            </tr>
+
+            <tr class="h"><td class="stat">Fire</td>
+              <td><input type="text" value="0" size="3" maxlength="6" name="mfir" id="mfir" class="minim2"></td>
+              <td><input type="text" value="207.0" size="4" maxlength="6" name="mxfir" id="mxfir" class="minim2"></td>
+            </tr>
+
+            <tr class="h"><td class="stat">Lightning</td>
+              <td><input type="text" value="0" size="3" maxlength="6" name="mlig" id="mlig" class="minim2"></td>
+              <td><input type="text" value="170.7" size="4" maxlength="6" name="mxlig" id="mxlig" class="minim2"></td>
+            </tr>
+
+            <tr class="h"><td class="stat">Poise</td>
+              <td><input type="text" value="0" size="3" maxlength="6" name="mpoi" id="mpoi" class="minim2"></td>
+              <td><input type="text" value="121.0" size="4" maxlength="6" name="mxpoi" id="mxpoi" class="minim2"></td>
+            </tr>
+
+            <tr class="h"><td class="stat">Poison</td>
+              <td><input type="text" value="0" size="3" maxlength="6" name="mpsn" id="mpsn" class="minim2"></td>
+              <td><input type="text" value="273.6" size="4" maxlength="6" name="mxpsn" id="mxpsn" class="minim2"></td>
+            </tr>
+
+            <tr class="h"><td class="stat">Bleed</td>
+              <td><input type="text" value="0" size="3" maxlength="6" name="mble" id="mble" class="minim2"></td>
+              <td><input type="text" value="163.7" size="4" maxlength="6" name="mxble" id="mxble" class="minim2"></td>
+            </tr>
+
+            <tr class="h"><td class="stat">Curse</td>
+              <td><input type="text" value="0" size="3" maxlength="6" name="mcur" id="mcur" class="minim2"></td>
+              <td><input type="text" value="226.0" size="4" maxlength="6" name="mxcur" id="mxcur" class="minim2"></td>
+            </tr>
+
+
+            </tbody>
+          </table>
+
+
+
+    </div>
+  </div>
+
+<div class="spacer"></div>
+
+</body>
+    <script src="../assets/armor-ef4ec92b4e0dc45068d10242a324d979a3d1cee4984dcec409c4be693ad41959.js"></script>
+  <script>
+    // Better place to put this?
+    function mobileToggle() {
+
+      var mobileDropdown = document.getElementsByClassName('mobile-navbar-dropdown')[0]
+      if (mobileDropdown.style.display === "block") {
+        mobileDropdown.style.display = "none"
+        } else {
+        mobileDropdown.style.display = "block"
+      }
+
+      // So the user can't scroll out of the menu dropdown box
+      var container = document.getElementById('outercontainer')
+      if (container.style.position === "fixed") {
+        container.style.position = "static"
+      } else {
+        container.style.position = "fixed"
+      }
+    }
+  </script>
+
+<!-- Mirrored from mugenmonkey.com/darksouls/armor by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Nov 2024 23:39:12 GMT -->
+</html>

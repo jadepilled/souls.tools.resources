@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from mugenmonkey.com/darksouls/class_optimizer by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Nov 2024 23:39:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>MugenMonkey</title>
+  <link rel="stylesheet" media="all" href="../assets/application-9deaf597636a4ddc4b07469aa203ea2937a75a6f0484ccd3463c5ab77c75866e.css" />
+  <script>
+//<![CDATA[
+window.gon={};gon.mugenmonkey_remastered={"user_info":{"signed_in":false,"user_name":"Anonymous","current_users_build":false}};
+//]]>
+</script>
+
+  <script>
+//<![CDATA[
+window.gon={};gon.mugenmonkey_remastered={"user_info":{"signed_in":false,"user_name":"Anonymous","current_users_build":false}};
+//]]>
+</script>
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="DQI53eSQAEjKHOow+oRTCgbJraly2Q6qg4AM6atsNrvwv124Z5VUUnXHdIkTzCkmHJTF8ClkWdUXECG337rpuQ==" />
+
+  
+  
+  
+  <script async defer data-website-id="36ed74bc-25d1-4854-99db-841b41145245" src="../../nate-umami.herokuapp.com/umami.js"></script>
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://mugenmonkey.com/assets/favicon-a3e07275c8da8f278bb0cb7d9c7fded410ddfca176b715e5033e8ee5d9efab2c.ico" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../assets/apple-touch-icon-152x152.png" />
+  <script src="../assets/sitewide-62d25d80f4be7b27a1a7d24cce4b876b5a63b9d74dc9c69de8d51d035857487f.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Tienne' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <meta name="google-site-verification" content="yC1-0M_A2g4_JABc9EbOvfScLZqUj6sld87RM3y9oWg" />
+
+</head>
+<body>
+
+
+    
+
+<div id="outercontainer">
+  
+        <div class="clearfix"></div>
+      <div role="main" id="content">
+        <div class="over analy">
+          <h2 class="title">Optimal starting class calculator <span class="fright small faded normal">Originally hosted at <a href="https://mugenmonkey.com/darksouls/class_optimizer.html">MugenMonkey</a></span></h2>
+          <div class="padding clearfix">
+          <hr class="mmar">
+          <div class="mwidh">
+          <div class="crow c2">
+            <div class="stretch">
+              <div class="padding">
+                <div class="formbox clearfix">
+                  <lable for="startClass_fake" class="bold">Best Class</lable>
+                  <input type="text" maxlength="30" id="bclass_fake" class="wide" readonly fid="bcs" value="No stats yet..."/>
+                  <img src="../../static.mugenmonkey.com/img/revert20b.png" width="20" height="20" id="revert_fake" class="tip" tex="Revert stats to default" />
+                </div>
+                <hr>
+                <div class="titles">
+                  <span>Stat</span><div>Starting Desired</div>
+                </div>
+                <!-- Vitality -->
+                <div class="formbox clearfix" fid="vtf" idm='statsf'>
+                  <lable for="vitality_fake">Vitality</lable>
+                  <input type="text" maxlength="2" id="bvitality_fake" disabled fid="vtf" />
+                  <input type="text" maxlength="2" id="cvitality_fake" tabindex="2" fid="vtf" class="bgw" />
+                  <span class="arrow down_fake noSelect" id="uvitality_fake" fid="vtf"></span>
+                  <span class="arrow up_fake noSelect" id="dvitality_fake" fid="vtf"></span>
+                </div>
+                <!-- Attunement -->
+                <div class="formbox clearfix" fid="atf" idm='statsf'>
+                  <lable for="attunement_fake">Attunement</lable>
+                  <input type="text" maxlength="2" id="battunement_fake" disabled fid="atf" />
+                  <input type="text" maxlength="2" id="cattunement_fake" tabindex="3" fid="atf" class="bgw"/>
+                  <span class="arrow down_fake noSelect" id="uattunement_fake" fid="atf"></span>
+                  <span class="arrow up_fake noSelect" id="dattunement_fake" fid="atf"></span>
+                </div>
+                <!-- Endurance -->
+                <div class="formbox clearfix" fid="enf" idm='statsf'>
+                  <lable for="endurance_fake">Endurance</lable>
+                  <input type="text" maxlength="2" id="bendurance_fake" disabled fid="enf" />
+                  <input type="text" maxlength="2" id="cendurance_fake" tabindex="4" fid="enf" class="bgw"/>
+                  <span class="arrow down_fake noSelect" id="uendurance_fake" fid="enf"></span>
+                  <span class="arrow up_fake noSelect" id="dendurance_fake" fid="enf"></span>
+                </div>
+                <!-- Strength -->
+                <div class="formbox clearfix" fid="stf" idm='statsf'>
+                  <lable for="strength_fake">Strength</lable>
+                  <input type="text" maxlength="2" id="bstrength_fake" disabled fid="stf" />
+                  <input type="text" maxlength="2" id="cstrength_fake" tabindex="5" fid="stf" class="bgw"/>
+                  <span class="arrow down_fake noSelect" id="ustrength_fake" fid="stf"></span>
+                  <span class="arrow up_fake noSelect" id="dstrength_fake" fid="stf"></span>
+                </div>
+                <!-- Dexterity -->
+                <div class="formbox clearfix" fid="dxf" idm='statsf'>
+                  <lable for="dexterity_fake">Dexterity</lable>
+                  <input type="text" maxlength="2" id="bdexterity_fake" disabled fid="dxf" />
+                  <input type="text" maxlength="2" id="cdexterity_fake" tabindex="6" fid="dxf" class="bgw"/>
+                  <span class="arrow down_fake noSelect" id="udexterity_fake" fid="dxf"></span>
+                  <span class="arrow up_fake noSelect" id="ddexterity_fake" fid="dxf"></span>
+                </div>
+                <!-- Resistance -->
+                <div class="formbox clearfix" fid="rsf" idm='statsf'>
+                  <lable for="resistance_fake">Resistance</lable>
+                  <input type="text" maxlength="2" id="bresistance_fake" disabled fid="rsf" />
+                  <input type="text" maxlength="2" id="cresistance_fake" tabindex="7" fid="rsf" class="bgw"/>
+                  <span class="arrow down_fake noSelect" id="uresistance_fake" fid="rsf"></span>
+                  <span class="arrow up_fake noSelect" id="dresistance_fake" fid="rsf"></span>
+                </div>
+                <!-- Intelligence -->
+                <div class="formbox clearfix" fid="inf" idm='statsf'>
+                  <lable for="intelligence_fake">Intelligence</lable>
+                  <input type="text" maxlength="2" id="bintelligence_fake" disabled fid="inf" />
+                  <input type="text" maxlength="2" id="cintelligence_fake" tabindex="8" fid="inf" class="bgw"/>
+                  <span class="arrow down_fake noSelect" id="uintelligence_fake" fid="inf"></span>
+                  <span class="arrow up_fake noSelect" id="dintelligence_fake" fid="inf"></span>
+                </div>
+                <!-- Faith -->
+                <div class="formbox clearfix" fid="ftf" idm='statsf'>
+                  <lable for="faith_fake">Faith</lable>
+                  <input type="text" maxlength="2" id="bfaith_fake" disabled fid="ftf" />
+                  <input type="text" maxlength="2" id="cfaith_fake" tabindex="9" fid="ftf" class="bgw"/>
+                  <span class="arrow down_fake noSelect" id="ufaith_fake" fid="ftf"></span>
+                  <span class="arrow up_fake noSelect" id="dfaith_fake" fid="ftf"></span>
+                </div>
+                <hr>
+                <div class="titles">
+                  <span>Stat</span><div>Starting Current</div>
+                </div>
+                <!-- Soul Level -->
+                <div class="formbox clearfix" fid="slf" idm='statsf'>
+                  <lable for="soulLevel_fake">Soul Level</lable>
+                  <input type="text" maxlength="3" id="bsoulLevel_fake" disabled fid="slf" />
+                  <input type="text" maxlength="3" id="csoulLevel_fake" tabindex="1" fid="slf" readonly class="bold"/>
+                  <span class="arrow down invisible" id="usoulLevel_fake" fid="slf"></span>
+                  <span class="arrow up invisible" id="dsoulLevel_fake" fid="slf"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="crow c2">
+            <div class="padding">
+                  <div class="rnktitle"><span>&nbsp;&nbsp;&nbsp;# &nbsp;&nbsp;Class</span> Soul Level</div>
+                  <div class="rankings">
+                    <span class="faded">No stats entered yet.</span>
+                  </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+<div class="spacer"></div>
+
+
+
+</body>
+    <script src="../assets/bestclass-b8fc3faa56572ad72d5870f0841449847fbb5762118e82e59ff5e00db4baccea.js"></script>
+  <script>
+    // Better place to put this?
+    function mobileToggle() {
+
+      var mobileDropdown = document.getElementsByClassName('mobile-navbar-dropdown')[0]
+      if (mobileDropdown.style.display === "block") {
+        mobileDropdown.style.display = "none"
+        } else {
+        mobileDropdown.style.display = "block"
+      }
+
+      // So the user can't scroll out of the menu dropdown box
+      var container = document.getElementById('outercontainer')
+      if (container.style.position === "fixed") {
+        container.style.position = "static"
+      } else {
+        container.style.position = "fixed"
+      }
+    }
+  </script>
+
+<!-- Mirrored from mugenmonkey.com/darksouls/class_optimizer by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Nov 2024 23:39:09 GMT -->
+</html>

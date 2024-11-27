@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from mugenmonkey.com/darksouls/weapons by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Nov 2024 23:38:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <title>MugenMonkey</title>
+  <link rel="stylesheet" media="all" href="../assets/application-9deaf597636a4ddc4b07469aa203ea2937a75a6f0484ccd3463c5ab77c75866e.css" />
+  <script>
+//<![CDATA[
+window.gon={};gon.mugenmonkey_remastered={"user_info":{"signed_in":false,"user_name":"Anonymous","current_users_build":false}};
+//]]>
+</script>
+
+  <script>
+//<![CDATA[
+window.gon={};gon.mugenmonkey_remastered={"user_info":{"signed_in":false,"user_name":"Anonymous","current_users_build":false}};
+//]]>
+</script>
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="RMXX6gCECkDw0yOdYVCjOzjMfVwj6PeyGbbsmJZ2koq5eLOPg4FeWk8IvSSIGNkXIpEVBXhVoM2NJsHG4qBNiA==" />
+
+  
+  
+  
+  <script async defer data-website-id="36ed74bc-25d1-4854-99db-841b41145245" src="../../nate-umami.herokuapp.com/umami.js"></script>
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://mugenmonkey.com/assets/favicon-a3e07275c8da8f278bb0cb7d9c7fded410ddfca176b715e5033e8ee5d9efab2c.ico" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../assets/apple-touch-icon-152x152.png" />
+  <script src="../assets/sitewide-62d25d80f4be7b27a1a7d24cce4b876b5a63b9d74dc9c69de8d51d035857487f.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Tienne' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <meta name="google-site-verification" content="yC1-0M_A2g4_JABc9EbOvfScLZqUj6sld87RM3y9oWg" />
+
+</head>
+<body>
+
+
+   
+      <div role="main" id="content">
+          <h2 class="title">Weapon Attack Rating Calculator <span class="fright small faded normal">Originally hosted at <a href="https://mugenmonkey.com/darksouls/weapons">MugenMonkey</a></span></h2>
+          <hr class="nomargin">
+          <div class="crow weap" id="sticky">
+            <div class="padding ">
+              <!-- Strength -->
+                <div class="formbox clearfix" fid="stf" idm='statsf'>
+                  <lable for="strength_fake">Strength</lable>
+
+                  <input type="text" maxlength="2" id="cstrength_fake" tabindex="5" fid="stf" class="bgw" value="40"/>
+                  <span class="arrow down_fake noSelect" id="ustrength_fake" fid="stf"></span>
+                  <span class="arrow up_fake noSelect" id="dstrength_fake" fid="stf"></span>
+                </div>
+                <!-- Dexterity -->
+                <div class="formbox clearfix" fid="dxf" idm='statsf'>
+                  <lable for="dexterity_fake">Dexterity</lable>
+
+                  <input type="text" maxlength="2" id="cdexterity_fake" tabindex="6" fid="dxf" class="bgw" value="40"/>
+                  <span class="arrow down_fake noSelect" id="udexterity_fake" fid="dxf"></span>
+                  <span class="arrow up_fake noSelect" id="ddexterity_fake" fid="dxf"></span>
+                </div>
+              <!-- Intelligence -->
+                <div class="formbox clearfix" fid="inf" idm='statsf'>
+                  <lable for="intelligence_fake">Intelligence</lable>
+
+                  <input type="text" maxlength="2" id="cintelligence_fake" tabindex="8" fid="inf" class="bgw" value="40"/>
+                  <span class="arrow down_fake noSelect" id="uintelligence_fake" fid="inf"></span>
+                  <span class="arrow up_fake noSelect" id="dintelligence_fake" fid="inf"></span>
+                </div>
+                <!-- Faith -->
+                <div class="formbox clearfix" fid="ftf" idm='statsf'>
+                  <lable for="faith_fake">Faith</lable>
+
+                  <input type="text" maxlength="2" id="cfaith_fake" tabindex="9" fid="ftf" class="bgw" value="40"/>
+                  <span class="arrow down_fake noSelect" id="ufaith_fake" fid="ftf"></span>
+                  <span class="arrow up_fake noSelect" id="dfaith_fake" fid="ftf"></span>
+                </div>
+                <div class="formbox clearfix" uid="hum">
+                  <lable for="humanity">Humanity</lable>
+                  <input type="text" maxlength="2" id="chumanity" tabindex="10" uid="hum" value="10" class="bgw"/>
+                  <span class="arrow down noSelect" id="uhumanity" uid="hum"></span>
+                  <span class="arrow up noSelect" id="dhumanity" uid="hum"></span>
+                </div>
+                <div class="sh2 aright">
+                  <select id="weapontsel">
+                    <option value="normal">Normal</option>
+                    <option value="crystal">Crystal</option>
+                    <option value="lightning">Lightning</option>
+                    <option value="raw">Raw</option>
+                    <option value="magic">Magic</option>
+                    <option value="enchanted">Enchanted</option>
+                    <option value="devine">Divine</option>
+                    <option value="occult">Occult</option>
+                    <option value="fire">Fire</option>
+                    <option value="chaos">Chaos</option>
+                  </select>
+                  <input type="checkbox" val="1" id="2hwep" checked="checked"/> <lable for"2hwep">2 Hand</lable>
+                </div>
+                <hr class="nomargin">
+                <div style="font-size:14px">Weapons to show
+                <div style="font-size:12px;padding:10px;" class="weptypsss">
+                  <div>Fist Weapons <input type="checkbox" value="f" id="f" checked="checked" /></div>
+                  <div>Daggers <input type="checkbox" value="d" id="d" checked="checked" /></div>
+                  <div>Straight Swords <input type="checkbox" value="ss" id="ss" checked="checked" /></div>
+                  <div>Greatswords <input type="checkbox" value="gs" id="gs" checked="checked" /></div>
+                  <div>Ultra Greatswords <input type="checkbox" value="ug" id="ug" checked="checked" /></div>
+                  <div>Curved Swords <input type="checkbox" value="cs" id="cs" checked="checked" /></div>
+                  <div>Katanas <input type="checkbox" value="k" id="k" checked="checked" /></div>
+                  <div>Curved Greatswords <input type="checkbox" value="cg" id="cg" checked="checked" /></div>
+                  <div>Piercing Swords <input type="checkbox" value="ps" id="ps" checked="checked" /></div>
+                  <div>Axes <input type="checkbox" value="a" id="a" checked="checked" /></div>
+                  <div>Great Axes <input type="checkbox" value="ga" id="ga" checked="checked" /></div>
+                  <div>Hammers <input type="checkbox" value="h" id="h" checked="checked" /></div>
+                  <div>Great Hammers <input type="checkbox" value="gh" id="gh" checked="checked" /></div>
+                  <div>Spears <input type="checkbox" value="s" id="s" checked="checked" /></div>
+                  <div>Halberds <input type="checkbox" value="hb" id="hb" checked="checked" /></div>
+                  <div>Whips <input type="checkbox" value="w" id="w" checked="checked" /></div>
+                  <div>Bows <input type="checkbox" value="b" id="b" checked="checked" /></div>
+                  <div>Crossbows <input type="checkbox" value="cb" id="cb" checked="checked" /></div>
+                  <div>Flames <input type="checkbox" value="fl" id="fl" checked="checked" /></div>
+                  <div>Catalysts <input type="checkbox" value="ca" id="ca" checked="checked" /></div>
+                  <div>Talismans <input type="checkbox" value="ta" id="ta" checked="checked" /></div>
+                  <div>PTDE Content <input type="checkbox" value="ptde" id="ptde" checked="checked" /></div>
+                </div>
+                </div>
+            </div>
+          </div>
+          <div class="crow weap" style="width:590px;">
+          <div class="util">
+            <span class="rleft">WEAPON</span> DMG (PHYS/MAG/FIRE/LGHT)
+          </div>
+          <div  class="padding">
+            <div id="fillup">
+
+          </div>
+          </div>
+        </div>
+
+
+</body>
+      <script src="../assets/weapons-3f953fb5560f40dffb6805576b3dad2eba450b93ef038edd31c1ea1bfe1a03fb.js"></script>
+  <script>
+    // Better place to put this?
+    function mobileToggle() {
+
+      var mobileDropdown = document.getElementsByClassName('mobile-navbar-dropdown')[0]
+      if (mobileDropdown.style.display === "block") {
+        mobileDropdown.style.display = "none"
+        } else {
+        mobileDropdown.style.display = "block"
+      }
+
+      // So the user can't scroll out of the menu dropdown box
+      var container = document.getElementById('outercontainer')
+      if (container.style.position === "fixed") {
+        container.style.position = "static"
+      } else {
+        container.style.position = "fixed"
+      }
+    }
+  </script>
+
+<!-- Mirrored from mugenmonkey.com/darksouls/weapons by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Nov 2024 23:38:41 GMT -->
+</html>
